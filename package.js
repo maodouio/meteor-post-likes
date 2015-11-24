@@ -13,9 +13,14 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom("1.0.2.1");
 
+  api.use('iron:router@1.0.12', ["server", "client"]);
   api.use('reywood:publish-composite@1.4.2', "server");
   api.use("socialize:likeable@0.1.3");
+  
   api.imply("socialize:likeable");
+
+  api.addFiles("lib/collections.js");
+  api.addFiles("lib/routes.js");
 
   //Add the friend-model files
   api.addFiles("server/publications/likes.js", "server");
