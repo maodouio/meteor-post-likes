@@ -1,6 +1,6 @@
 Package.describe({
   name: 'maodouio:activity-likes',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: '',
   // URL to the Git repository containing the source code for this package.
@@ -21,6 +21,8 @@ Package.onUse(function(api) {
 
   api.addFiles("lib/collections.js");
   api.addFiles("lib/routes.js");
+
+  api.addFiles("client/startup.js", "client");
 
   //Add the friend-model files
   api.addFiles("server/publications/likes.js", "server");
