@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'maodouio:activity-likes',
+  name: 'maodouio:post-likes',
   version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: '',
