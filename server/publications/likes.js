@@ -1,4 +1,4 @@
-Meteor.publishComposite("userLikesComposite", function(userId) {
+Meteor.publishComposite("userPostLikesComposite", function(userId) {
   return {
     find: function() {
       return Like.collection.find({userId: userId});
